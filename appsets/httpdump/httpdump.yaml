@@ -30,6 +30,6 @@ spec:
         path: 'apps/httpdump/overlays/{{ name }}/'
       syncPolicy:
         automated:
-          prune: true
+          prune: false
         syncOptions:
           - CreateNamespace=true

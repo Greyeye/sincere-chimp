@@ -25,7 +25,7 @@ spec:
         server: '{{ url }}'
       project: default
       source:
-        repoURL: ${https://github.com/Greyeye/sincere-chimp}
+        repoURL: https://github.com/Greyeye/sincere-chimp
         targetRevision: HEAD
         path: 'apps/httpdump/overlays/{{ name }}/'
       syncPolicy:

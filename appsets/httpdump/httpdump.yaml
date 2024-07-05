@@ -19,7 +19,8 @@ spec:
       namespace: argocd
       labels:
         argocd.argoproj.io/application-set-name: "httpdump"
-    spec:
+        some-prtest: "pr6"
+     spec:
       destination:
         namespace: "httpdump-{{ name }}"
         server: '{{ url }}'

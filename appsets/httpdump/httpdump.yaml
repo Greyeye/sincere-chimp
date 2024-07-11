@@ -32,7 +32,7 @@ spec:
         helm:
           valueFiles:
             - values.yaml
-            - ../../registry/tooling-eks-01.yaml
+          ignoreMissingValueFiles: true
       syncPolicy:
         automated:
           prune: true

@@ -22,7 +22,7 @@ spec:
     spec:
       destination:
         namespace: "echo-server-{{ metadata.labels.environment }}"
-        server: '{{ url }}'
+        server: https://kubernetes.default.svc
       project: default
       source:
         repoURL: https://github.com/Greyeye/sincere-chimp

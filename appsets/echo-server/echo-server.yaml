@@ -34,8 +34,7 @@ spec:
             - values-{{ metadata.labels.environment }}.yaml
           ignoreMissingValueFiles: true
           values: |-
-            annotations:
-              helloworld.io: test
+            replicaCount: 3
       syncPolicy:
         automated:
           prune: true

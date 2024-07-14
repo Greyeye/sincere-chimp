@@ -34,9 +34,8 @@ spec:
             - values-{{ metadata.labels.environment }}.yaml
           ignoreMissingValueFiles: true
           values: |-
-            echo-server:
-              annotations:
-                helloworld.io: test
+            annotations:
+              helloworld.io: test
       syncPolicy:
         automated:
           prune: true

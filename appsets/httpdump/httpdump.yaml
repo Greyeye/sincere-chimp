@@ -20,7 +20,6 @@ spec:
       namespace: kubechecks
       labels:
         argocd.argoproj.io/application-set-name: "httpdump"
-        pr-test: "pr-test-xyz"
     spec:
       destination:
         namespace: "httpdump-{{ name }}"

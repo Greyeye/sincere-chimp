@@ -27,7 +27,7 @@ spec:
       source:
         repoURL: https://github.com/Greyeye/sincere-chimp
         targetRevision: HEAD
-        path: 'apps/app-set-echo-server/in-cluster'
+        path: 'apps/app-set-echo-server/{{ metadata.cluster.name }}'
         helm:
           valueFiles:
             - values.yaml

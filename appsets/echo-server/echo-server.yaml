@@ -16,7 +16,7 @@ spec:
       name: "in-cluster-echo-server-{{ metadata.labels.environment }}"
       namespace: kubechecks
       labels:
-        argocd.argoproj.io/application-set-name: "echo-server"
+        argocd.argoproj.io/application-set-name: "app-set-echoserver"
     spec:
       destination:
         namespace: "echo-server-{{ metadata.labels.environment }}"

@@ -10,7 +10,7 @@ spec:
           matchLabels:
             environment: development
         values:
-          cluster: 'in-cluster'
+            cluster: 'in-cluster'
   template:
     metadata:
       finalizers:
@@ -18,11 +18,11 @@ spec:
       name: "in-cluster-echo-server-{{ metadata.labels.environment }}"
       namespace: kubechecks
       labels:
-        argocd.argoproj.io/application-set-name: "app-set-echoserver"
+        argocd.argoproj.io/application-set-name: "echo-server"
     spec:
       destination:
         namespace: "echo-server-{{ metadata.labels.environment }}"
-        server: https://kubernetes.default.svc
+        server: '{{ url }}'
       project: default
       source:
         repoURL: https://github.com/Greyeye/sincere-chimp

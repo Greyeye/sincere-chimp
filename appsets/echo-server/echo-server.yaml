@@ -36,7 +36,7 @@ spec:
           ignoreMissingValueFiles: true
           values: |-
             echo-server:
-              replicaCount: 2
+              replicaCount: 1
       syncPolicy:
         automated:
           prune: true
